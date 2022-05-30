@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Cinema</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./js/index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page">
+    <header class="header-main">
+      <div class="header__wrapper">
+      <a class="logo" href="./index.html">
+      <img src="./img/logo.svg" alt="logo" class="header-main-logo" /></a>
+      <nav class="site-navigation">
+        <svg class="burger-btn" width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+          <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+          <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+          <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+          <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+          <line y1="3.5" x2="15" y2="3.5" stroke="white"/>
+          <line y1="3.5" x2="15" y2="3.5" stroke="white"/>
+          <line y1="3.5" x2="15" y2="3.5" stroke="white"/>
+          <line y1="3.5" x2="15" y2="3.5" stroke="white"/>
+          <line y1="3.5" x2="15" y2="3.5" stroke="white"/>
+          <line y1="6.5" x2="15" y2="6.5" stroke="white"/>
+          <line y1="6.5" x2="15" y2="6.5" stroke="white"/>
+          <line y1="6.5" x2="15" y2="6.5" stroke="white"/>
+          <line y1="6.5" x2="15" y2="6.5" stroke="white"/>
+          <line y1="6.5" x2="15" y2="6.5" stroke="white"/>
+          </svg>
+          
+        <ul class="nav nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="btn-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn-link">Фильмы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn-link">Кинотеатры</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn-link">События</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn-link">Поддержка</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <div class="authorization">
+        <span class="authorization-welcome">Привет, Александр!</span>
+        <img
+          src="./img/avatar.jpg"
+          alt="avatar"
+          class="avatar"
+          width="33"
+          height="33"
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="film">
+        <div class="film-description">
+          <small class="description-subtitle"> Wrath of the Lich King</small>
+          <h1 class="description-title">Гнев Короля-Лича</h1>
+          <p>
+            "Злоба его стала легендой. Владыка всех неупокоенных Плети, хозяин
+            рунического клинка Ледяная Скорбь, непримиримый враг всех вольных
+            народов Азерота, Король-лич – существо неизмеримой мощи и
+            непревзойденной жестокости, чья ледяная душа без остатка поглощена
+            стремлением уничтожить все живое в World of Warcraft.</p><p>Но так было не
+            всегда. Прежде, чем оркский шаман Нер'зул заразил его душу жаждой
+            убийства, Король-лич был принцем Артасом Менетилом, наследником
+            лордеронского трона и верным паладином Ордена Серебряной Длани.
+            Когда на севере Лордерона разразилась чума, обращающая живых в
+            нежить, несущая гибель всему, что он знал и любил, Артас
+            устремляется на безнадежные поиски рунического клинка, наделенного
+            силой, что способна спасти его родную страну.</p><p>Однако предмет его
+            поисков требует от нового хозяина невероятной жертвы. С его
+            обретением для Артаса начинается ужасное нисхождение в бездну
+            проклятия. Теперь путь лордеронского принца ведет в морозные
+            северные пустоши к Ледяному Трону...
+          </p>
+        </div>
+        <div class="film-trailer">
+          <!-- <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/L3Mg6lk6yyA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe> -->
+          <video class="trailer__video" poster="./img/video.jpg" width="600" height="300" controls>
+            <source src="img/Трейлер World of Warcraft_ Wrath of the Lich King.mp4"  width="600" height="300" type="video/webm">
+            </object>
+          </video>
+        </div>
+      </section>
+      <div class="film-info">
+        <div class="timer">
+          <p class="timer-pic">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5631 11.7661L10.7746 9.67465V5.41442C10.7746 4.98606 10.4283 4.63981 9.99995 4.63981C9.57159 4.63981 9.22534 4.98606 9.22534 5.41442V10.062C9.22534 10.306 9.33999 10.5361 9.53519 10.6817L12.6336 13.0055C12.773 13.11 12.9357 13.1604 13.0975 13.1604C13.3338 13.1604 13.5662 13.0543 13.718 12.8498C13.9752 12.5081 13.9055 12.0225 13.5631 11.7661Z"
+                fill="white"
+              />
+              <path
+                d="M10 0C4.48566 0 0 4.48566 0 10C0 15.5143 4.48566 20 10 20C15.5143 20 20 15.5143 20 10C20 4.48566 15.5143 0 10 0ZM10 18.4508C5.34082 18.4508 1.54918 14.6592 1.54918 10C1.54918 5.34082 5.34082 1.54918 10 1.54918C14.66 1.54918 18.4508 5.34082 18.4508 10C18.4508 14.6592 14.6592 18.4508 10 18.4508Z"
+                fill="white"
+              />
+            </svg>
+          </p>
+          <p class="timer-info">240 мин</p>
+        </div>
+        <div class="rating">
+          <p class="rating-pic">
+            <svg
+              width="35"
+              height="18"
+              viewBox="0 0 35 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="35" height="17.5" fill="url(#pattern0)" />
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_1_97"
+                    transform="translate(0 -0.00416667) scale(0.000833333 0.00166667)"
+                  />
+                </pattern>
+                <image
+                  id="image0_1_97"
+                  width="1200"
+                  height="605"
+                 />
+              </defs>
+            </svg>
+          </p>
+          <p class="rating-info">
+            <span class="rating-current">9.8 </span> / 10
+          </p>
+        </div>
+      </div>
+
+      <section class="booking">
+        <div class="date">
+          <span class="name-section">Дата</span>
+          <div class="date-btn">
+            <button class="btn-select" type="button">
+              <span class="mounth">Янв</span>
+              <span class="day">12</span>
+              <span class="week">ср</span>
+            </button>
+            <button class="btn-select" type="button">
+              <span class="mounth">Янв</span>
+              <span class="day">13</span>
+              <span class="week">чт</span>
+            </button>
+            <button class="btn-select" type="button">
+              <span class="mounth">Янв</span>
+              <span class="day">14</span>
+              <span class="week">пт</span>
+            </button>
+            <button class="btn-select" type="button">
+              <span class="mounth">Янв</span>
+              <span class="day">15</span>
+              <span class="week">сб</span>
+            </button>
+          </div>
+        </div>
+        <div class="cinema">
+          <span class="name-section">Кинотеатр</span>
+          <select class="cinema-select" name="cinema">
+            <option value="КиноДом, ул. Щербакова 3">
+              КиноДом, ул. Щербакова 3
+            </option>
+            <option value="Мягкий кинотеатр, ул. Социалистическая 132">
+              Мягкий кинотеатр, ул. Социалистическая 132
+            </option>
+            <option value="IMAX, ул. 8 марта 13">IMAX, ул. 8 марта 13</option>
+            <option value="Современник, пр-кт К.Маркса 131">
+              Современник, пр-кт К.Маркса 131
+            </option>
+          </select>
+        </div>
+        <div class="time">
+          <span class="name-section">Время</span>
+          <select class="time-select" name="time">
+            <option value="12:40">12:40</option>
+            <option value="15:00">15:00</option>
+            <option value="18:30">18:30</option>
+            <option value="21:20">21:20</option>
+            <option value="23:30">23:30</option>
+          </select>
+        </div>
+      </section>
+      <section class="hall-place">
+          <span class="divide">
+          <svg width="1000" height="67" viewBox="0 0 914 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 67L73.04 0H840.96L914 67H0Z" fill="url(#paint0_linear_1_925)"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_925" x1="457" y1="0" x2="457" y2="67" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C4C4C4" stop-opacity="0.21"/>
+            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+          </span>
+        <div class="front-sit-place">
+       <button class="btn-sit-place" type="button">1</button>
+       <button class="btn-sit-place" type="button">2</button>
+       <button class="btn-sit-place" type="button">3</button>
+       <button class="btn-sit-place" type="button">4</button>
+       <button class="btn-sit-place" type="button">5</button>
+       <button class="btn-sit-place" type="button">6</button>
+       <button class="btn-sit-place" type="button">7</button>
+       <button class="btn-sit-place" type="button">8</button>
+       <button class="btn-sit-place" type="button">9</button>
+       <button class="btn-sit-place" type="button">10</button>
+       <button class="btn-sit-place" type="button">11</button>
+       <button class="btn-sit-place" type="button">12</button>
+       <button class="btn-sit-place" type="button">13</button>
+       <button class="btn-sit-place" type="button">14</button>
+       <button class="btn-sit-place" type="button">15</button>
+       <button class="btn-sit-place" type="button">16</button>
+       <button class="btn-sit-place" type="button">17</button>
+       <button class="btn-sit-place" type="button">18</button>
+       <button class="btn-sit-place" type="button">19</button>
+       <button class="btn-sit-place" type="button">20</button>
+       <button class="btn-sit-place occupate" type="button">21</button>
+       <button class="btn-sit-place" type="button">22</button>
+       <button class="btn-sit-place" type="button">23</button>
+       <button class="btn-sit-place occupate" type="button">24</button>
+       <button class="btn-sit-place" type="button">1</button>
+       <button class="btn-sit-place" type="button">2</button>
+       <button class="btn-sit-place" type="button">3</button>
+       <button class="btn-sit-place" type="button">4</button>
+       <button class="btn-sit-place" type="button">5</button>
+       <button class="btn-sit-place" type="button">6</button>
+       <button class="btn-sit-place" type="button">7</button>
+       <button class="btn-sit-place" type="button">8</button>
+       <button class="btn-sit-place" type="button">9</button>
+       <button class="btn-sit-place" type="button">10</button>
+       <button class="btn-sit-place" type="button">11</button>
+       <button class="btn-sit-place" type="button">12</button>
+       <button class="btn-sit-place" type="button">13</button>
+       <button class="btn-sit-place" type="button">14</button>
+       <button class="btn-sit-place" type="button">15</button>
+       <button class="btn-sit-place" type="button">16</button>
+       <button class="btn-sit-place" type="button">17</button>
+       <button class="btn-sit-place" type="button">18</button>
+       <button class="btn-sit-place" type="button">19</button>
+       <button class="btn-sit-place" type="button">20</button>
+       <button class="btn-sit-place" type="button">21</button>
+       <button class="btn-sit-place" type="button">22</button>
+       <button class="btn-sit-place" type="button">23</button>
+       <button class="btn-sit-place" type="button">24</button>
+       <button class="btn-sit-place" type="button">1</button>
+       <button class="btn-sit-place" type="button">2</button>
+       <button class="btn-sit-place" type="button">3</button>
+       <button class="btn-sit-place" type="button">4</button>
+       <button class="btn-sit-place" type="button">5</button>
+       <button class="btn-sit-place" type="button">6</button>
+       <button class="btn-sit-place occupate" type="button">7</button>
+       <button class="btn-sit-place" type="button">8</button>
+       <button class="btn-sit-place" type="button">9</button>
+       <button class="btn-sit-place" type="button">10</button>
+       <button class="btn-sit-place" type="button">11</button>
+       <button class="btn-sit-place" type="button">12</button>
+       <button class="btn-sit-place" type="button">13</button>
+       <button class="btn-sit-place" type="button">14</button>
+       <button class="btn-sit-place" type="button">15</button>
+       <button class="btn-sit-place" type="button">16</button>
+       <button class="btn-sit-place" type="button">17</button>
+       <button class="btn-sit-place" type="button">18</button>
+       <button class="btn-sit-place occupate" type="button">19</button>
+       <button class="btn-sit-place" type="button">20</button>
+       <button class="btn-sit-place" type="button">21</button>
+       <button class="btn-sit-place" type="button">22</button>
+       <button class="btn-sit-place" type="button">23</button>
+       <button class="btn-sit-place" type="button">24</button>
+       <button class="btn-sit-place" type="button">1</button>
+       <button class="btn-sit-place occupate" type="button">2</button>
+       <button class="btn-sit-place" type="button">3</button>
+       <button class="btn-sit-place" type="button">4</button>
+       <button class="btn-sit-place" type="button">5</button>
+       <button class="btn-sit-place" type="button">6</button>
+       <button class="btn-sit-place" type="button">7</button>
+       <button class="btn-sit-place" type="button">8</button>
+       <button class="btn-sit-place" type="button">9</button>
+       <button class="btn-sit-place" type="button">10</button>
+       <button class="btn-sit-place" type="button">11</button>
+       <button class="btn-sit-place" type="button">12</button>
+       <button class="btn-sit-place" type="button">13</button>
+       <button class="btn-sit-place" type="button">14</button>
+       <button class="btn-sit-place" type="button">15</button>
+       <button class="btn-sit-place" type="button">16</button>
+       <button class="btn-sit-place" type="button">17</button>
+       <button class="btn-sit-place" type="button">18</button>
+       <button class="btn-sit-place" type="button">19</button>
+       <button class="btn-sit-place" type="button">20</button>
+       <button class="btn-sit-place" type="button">21</button>
+       <button class="btn-sit-place" type="button">22</button>
+       <button class="btn-sit-place" type="button">23</button>
+       <button class="btn-sit-place" type="button">24</button>
+       <button class="btn-sit-place" type="button">1</button>
+       <button class="btn-sit-place" type="button">2</button>
+       <button class="btn-sit-place" type="button">3</button>
+       <button class="btn-sit-place" type="button">4</button>
+       <button class="btn-sit-place occupate" type="button">5</button>
+       <button class="btn-sit-place occupate" type="button">6</button>
+       <button class="btn-sit-place" type="button">7</button>
+       <button class="btn-sit-place" type="button">8</button>
+       <button class="btn-sit-place" type="button">9</button>
+       <button class="btn-sit-place" type="button">10</button>
+       <button class="btn-sit-place" type="button">11</button>
+       <button class="btn-sit-place" type="button">12</button>
+       <button class="btn-sit-place" type="button">13</button>
+       <button class="btn-sit-place" type="button">14</button>
+       <button class="btn-sit-place" type="button">15</button>
+       <button class="btn-sit-place" type="button">16</button>
+       <button class="btn-sit-place" type="button">17</button>
+       <button class="btn-sit-place" type="button">18</button>
+       <button class="btn-sit-place" type="button">19</button>
+       <button class="btn-sit-place" type="button">20</button>
+       <button class="btn-sit-place" type="button">21</button>
+       <button class="btn-sit-place" type="button">22</button>
+       <button class="btn-sit-place" type="button">23</button>
+       <button class="btn-sit-place" type="button">24</button>
+        </div>
+        <div class="side-sit">
+        <div class="right-sit-place">
+          <button class="btn-sit-place" type="button">1</button>
+          <button class="btn-sit-place" type="button">2</button>
+          <button class="btn-sit-place" type="button">3</button>
+          <button class="btn-sit-place" type="button">4</button>
+          <button class="btn-sit-place" type="button">5</button>
+          <button class="btn-sit-place" type="button">6</button>
+          <button class="btn-sit-place" type="button">7</button>
+          <button class="btn-sit-place" type="button">8</button>
+          <button class="btn-sit-place" type="button">9</button>
+          <button class="btn-sit-place" type="button">10</button>
+          <button class="btn-sit-place" type="button">1</button>
+          <button class="btn-sit-place" type="button">2</button>
+          <button class="btn-sit-place" type="button">3</button>
+          <button class="btn-sit-place" type="button">4</button>
+          <button class="btn-sit-place" type="button">5</button>
+          <button class="btn-sit-place" type="button">6</button>
+          <button class="btn-sit-place" type="button">7</button>
+          <button class="btn-sit-place" type="button">8</button>
+          <button class="btn-sit-place" type="button">9</button>
+          <button class="btn-sit-place" type="button">10</button>
+          <button class="btn-sit-place" type="button">1</button>
+          <button class="btn-sit-place" type="button">2</button>
+          <button class="btn-sit-place" type="button">3</button>
+          <button class="btn-sit-place" type="button">4</button>
+          <button class="btn-sit-place" type="button">5</button>
+          <button class="btn-sit-place" type="button">6</button>
+          <button class="btn-sit-place" type="button">7</button>
+          <button class="btn-sit-place" type="button">8</button>
+          <button class="btn-sit-place" type="button">9</button>
+          <button class="btn-sit-place" type="button">10</button>
+          <button class="btn-sit-place" type="button">1</button>
+          <button class="btn-sit-place" type="button">2</button>
+          <button class="btn-sit-place" type="button">3</button>
+          <button class="btn-sit-place" type="button">4</button>
+          <button class="btn-sit-place" type="button">5</button>
+          <button class="btn-sit-place" type="button">6</button>
+          <button class="btn-sit-place" type="button">7</button>
+          <button class="btn-sit-place" type="button">8</button>
+          <button class="btn-sit-place" type="button">9</button>
+          <button class="btn-sit-place" type="button">10</button>
+          <button class="btn-sit-place" type="button">1</button>
+          <button class="btn-sit-place" type="button">2</button>
+          <button class="btn-sit-place" type="button">3</button>
+          <button class="btn-sit-place" type="button">4</button>
+          <button class="btn-sit-place" type="button">5</button>
+          <button class="btn-sit-place" type="button">6</button>
+          <button class="btn-sit-place" type="button">7</button>
+          <button class="btn-sit-place" type="button">8</button>
+          <button class="btn-sit-place" type="button">9</button>
+          <button class="btn-sit-place" type="button">10</button>
+            </div>
+            <div class="left-sit-place">
+              <button class="btn-sit-place" type="button">1</button>
+              <button class="btn-sit-place" type="button">2</button>
+              <button class="btn-sit-place" type="button">3</button>
+              <button class="btn-sit-place" type="button">4</button>
+              <button class="btn-sit-place" type="button">5</button>
+              <button class="btn-sit-place" type="button">6</button>
+              <button class="btn-sit-place" type="button">7</button>
+              <button class="btn-sit-place" type="button">8</button>
+              <button class="btn-sit-place" type="button">9</button>
+              <button class="btn-sit-place" type="button">10</button>
+              <button class="btn-sit-place" type="button">1</button>
+              <button class="btn-sit-place" type="button">2</button>
+              <button class="btn-sit-place" type="button">3</button>
+              <button class="btn-sit-place" type="button">4</button>
+              <button class="btn-sit-place" type="button">5</button>
+              <button class="btn-sit-place" type="button">6</button>
+              <button class="btn-sit-place" type="button">7</button>
+              <button class="btn-sit-place" type="button">8</button>
+              <button class="btn-sit-place" type="button">9</button>
+              <button class="btn-sit-place" type="button">10</button>
+              <button class="btn-sit-place" type="button">1</button>
+              <button class="btn-sit-place" type="button">2</button>
+              <button class="btn-sit-place" type="button">3</button>
+              <button class="btn-sit-place" type="button">4</button>
+              <button class="btn-sit-place" type="button">5</button>
+              <button class="btn-sit-place occupate" type="button">6</button>
+              <button class="btn-sit-place occupate" type="button">7</button>
+              <button class="btn-sit-place occupate" type="button">8</button>
+              <button class="btn-sit-place" type="button">9</button>
+              <button class="btn-sit-place" type="button">10</button>
+              <button class="btn-sit-place" type="button">1</button>
+              <button class="btn-sit-place" type="button">2</button>
+              <button class="btn-sit-place" type="button">3</button>
+              <button class="btn-sit-place" type="button">4</button>
+              <button class="btn-sit-place" type="button">5</button>
+              <button class="btn-sit-place" type="button">6</button>
+              <button class="btn-sit-place" type="button">7</button>
+              <button class="btn-sit-place" type="button">8</button>
+              <button class="btn-sit-place" type="button">9</button>
+              <button class="btn-sit-place" type="button">10</button>
+              <button class="btn-sit-place" type="button">1</button>
+              <button class="btn-sit-place" type="button">2</button>
+              <button class="btn-sit-place occupate" type="button">3</button>
+              <button class="btn-sit-place occupate" type="button">4</button>
+              <button class="btn-sit-place" type="button">5</button>
+              <button class="btn-sit-place" type="button">6</button>
+              <button class="btn-sit-place" type="button">7</button>
+              <button class="btn-sit-place" type="button">8</button>
+              <button class="btn-sit-place" type="button">9</button>
+              <button class="btn-sit-place" type="button">10</button>
+            </div>
+          </div>
+          <div class="example">
+          <button class="btn-sit-place busy" type="button">1</button>
+          <span>Занято</span>
+          <button class="btn-sit-place free" type="button">2</button>
+          <span>Свободно</span>
+          <button class="btn-sit-place selected" type="button">3</button>
+          <span>Выбрано</span>
+        </div>
+      </section>
+      <div class="pay">
+        <div class="total-price">
+        <span class="price">Итого к оплате</span>
+        <span class="payment">0</span>
+        <span class="ruble">₽</span>
+      </div>
+        <button class="btn-pay">Перейти к оплате</button>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
